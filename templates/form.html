@@ -3,13 +3,13 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <title>Blush Delight</title>
+    <title>Form</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 </head>
     
 <body>
     <div class="container">
-        <h1>Blush Delight</h1>
+        <h1><img class="logoform" src="{{ url_for('static', filename='goodlogo.png') }}" alt="logo"></h1>
         <p>Custom Cake Order Form</p>
 
         <form action="/submit" method="POST">

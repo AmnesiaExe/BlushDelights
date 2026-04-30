@@ -6,6 +6,14 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/form')
+def form():
+    return render_template('form.html')
+
+@app.route('/desserts')
+def desserts():
+    return render_template('desserts/desserts.html')
+
 @app.route('/submit', methods=['GET', 'POST'])
 def submit():
     if request.method == 'POST':
@@ -23,7 +31,9 @@ def submit():
 
         return render_template('success.html', name=name)
 
+
     return render_template('index.html')
+    
 
 if __name__ == '__main__':
     app.run(debug=True)
