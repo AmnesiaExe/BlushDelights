@@ -14,6 +14,14 @@ def form():
 def desserts():
     return render_template('desserts/desserts.html')
 
+@app.route('/cakes')
+def cakes():
+    return render_template('desserts/cakes.html')
+
+@app.route('/tarts')
+def tarts():
+    return render_template('desserts/tarts.html')
+
 @app.route('/submit', methods=['GET', 'POST'])
 def submit():
     if request.method == 'POST':

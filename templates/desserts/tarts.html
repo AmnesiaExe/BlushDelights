@@ -1,1 +1,33 @@
-git 
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Tarts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    
+</head>
+    
+<body>
+    <div>
+        <img class="logo" src="{{ url_for('static', filename='goodlogo.png') }}" alt="logo">
+    </div>
+
+    <div class="navBar">
+        <ul>
+            <li><a href="{{ url_for('form') }}">Form</a></li>
+            <li><a href="{{ url_for('desserts') }}">Desserts</a></li>
+        </ul>
+    </div>
+
+    <div class = "row">
+        <div class = "column">
+            <img class = "tartimg" src="{{ url_for('static', filename='mangotart.png') }}" alt="mango">
+            <img class = "tartimg" src="{{ url_for('static', filename='peachtart.png') }}" alt="peach">
+            <img class = "tartimg" src="{{ url_for('static', filename='raspberrytart.png') }}" alt="raspberry">
+            <img class = "tartimg" src="{{ url_for('static', filename='strawberrytart.png') }}" alt="strawberry">
+        </div>"
+    </div>
+    </div>
+</body>
+</html>

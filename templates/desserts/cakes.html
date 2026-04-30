@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Cakes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    
+</head>
+    
+<body>
+    <div>
+        <img class="logo" src="{{ url_for('static', filename='goodlogo.png') }}" alt="logo">
+    </div>
+
+    <div class="navBar">
+        <ul>
+            <li><a href="{{ url_for('form') }}">Form</a></li>
+            <li><a href="{{ url_for('desserts') }}">Desserts</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -9,14 +9,15 @@
 </head>
     
 <body>
-    <div class="container">
+    <div>
         <img class="logo" src="{{ url_for('static', filename='goodlogo.png') }}" alt="logo">
     </div>
 
     <div class="navBar">
         <ul>
             <li><a href="{{ url_for('form') }}">Form</a></li>
-            <li><a href="{{ url_for('desserts') }}">Desserts</a></li>
+            <li><a href="{{ url_for('cakes') }}">Cakes</a></li>
+            <li><a href="{{ url_for('tarts') }}">Tarts</a></li>
         </ul>
     </div>
 </body>
