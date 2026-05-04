@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
 }
+/*LOGO STUFF*/
 
 .logo {
     width: 400px;  
@@ -18,13 +19,36 @@ body {
     height: auto;  
     position: center;  
 }
-
-.tartimg {
-    width: 400px;  
-    height: auto;  
-    position: center;    
+/* DESSERTS CODE */
+.dessert {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
 }
 
+.card {
+    text-align: center;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* TART CODE */
+.tartimg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;    
+}
+
+/* CAKE CODE */
+.cakeimg {
+    width: 400px;     
+}
+
+/* FORM CODE */
 .container {
     width: 60%;
     max-width: 700px;
@@ -94,19 +118,19 @@ button:hover {
     background-color: #b85770;
 }
 
-/*Navigation Bar Code*/
-.navbar{
+/*NAVIGATION Bar Code*/
+.navBar{
 	margin: 30px auto;
 	display: flex;
 	align-items: center;
 }
 
-ul{
+.navBar ul{
     flex: 1;
     text-align: right;
 }
 
-ul li{
+.navBar ul li{
 	display: inline-block;
 	list-style: none;
 	margin: 0 25px;
