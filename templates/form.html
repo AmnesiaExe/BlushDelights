@@ -9,8 +9,10 @@
     
 <body>
     <div class="container">
-        <h1><img class="logoform" src="{{ url_for('static', filename='goodlogo.png') }}" alt="logo"></h1>
-        <p>Custom Cake Order Form</p>
+        <a href = "{{ url_for('home') }}" style="display: block; text-align: center;">
+            <img class="logoform" src="{{ url_for('static', filename='goodlogo.png') }}" alt="logo">
+        </a>
+        <h1>Custom Cake Order Form</h1>
 
         <form action="/submit" method="POST">
             <label for="name">Name:</label>
