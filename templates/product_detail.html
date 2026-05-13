@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Raspberry Merlot</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar product-nav">
+
+        <a href="/">Home</a>
+        <a href="/products">Menu</a>
+        <a href="#">Contact</a>
+        <a href="#">Order</a>
+        <a href="#">About Us</a>
+
+    </nav>
+
+
+    <!-- PRODUCT DETAIL PAGE -->
+    <section class="product-detail-page">
+
+        <div class="product-detail-card">
+
+
+            <!-- LEFT IMAGE -->
+            <div class="detail-image-box">
+
+                <img src="{{ url_for('static', filename='images/chocolate-cake.png') }}"
+                    alt="Raspberry Merlot">
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="detail-info">
+
+                <h1>Raspberry Merlot</h1>
+
+                <p class="detail-short">
+                    A smooth raspberry merlot mousse layered over a rich chocolate base, 
+                    coated in glossy dark ganache and finished with fresh raspberries. 
+                    Balanced with deep berry flavours and delicate sweetness, 
+                    this elegant dessert delivers a luxurious and refined finish in every bite.
+                </p>
+
+
+                <div class="product-accordion">
+
+                    <details>
+                        <summary>Product Info</summary>
+                        <p>Rich chocolate, sweet raspberry, and subtle berry wine notes.</p>
+                        <p>Serves 1–2.</p>
+                    </details>
+
+                    <details>
+                        <summary>Allergens & Ingredients</summary>
+                        <p>Contains dairy, gluten, and eggs.</p>
+                        <p>Made with raspberry, dark chocolate, cream, cocoa, flour, butter, sugar, eggs, and merlot reduction.</p>
+                    </details>
+
+                    <details>
+                        <summary>Storage</summary>
+                        <p>Keep refrigerated. Best enjoyed within 2 days.</p>
+                    </details>
+
+                    <details>
+                        <summary>Source</summary>
+                        <p>Crafted with locally sourced dairy and fresh farm-picked raspberries.</p>
+                    </details>
+
+                </div>
+
+
+                <!-- QUANTITY -->
+                <div class="quantity-box">
+
+                    <label for="quantity">
+                        Amount:
+                    </label>
+
+                    <input type="number"
+                        id="quantity"
+                        value="1"
+                        min="1">
+
+                </div>
+
+
+                <!-- BUTTON -->
+                <button class="cart-btn">
+
+                    Add to Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

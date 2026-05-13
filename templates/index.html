@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blush Delight</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <a href="/">Home</a>
+        <a href="/products">Menu</a>
+        <a href="#">Contact</a>
+        <a href="#">Order</a>
+        <a href="#">About Us</a>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Blush Delight</h1>
+
+            <p class="subtitle">Est 2026</p>
+
+            <p class="tagline">A little blush in every bite</p>
+
+        </div>
+
+    </section>
+
+    <!-- INDULGENCE SECTION -->
+
+    <section class="indulgence">
+
+        <div class="indulgence-image">
+
+            <img src="{{ url_for('static', filename='images/macarons.jpg') }}"
+                alt="Macarons">
+
+        </div>
+
+
+        <div class="indulgence-text">
+
+            <h2>THE ART OF</h2>
+
+            <h1>Indulgence...</h1>
+
+            <p>
+                At Blush Delight, every dessert is crafted with passion,
+                elegance, and the finest ingredients.
+                From delicate pastries to handcrafted cakes,
+                we create sweet experiences that bring comfort,
+                celebration, and a little touch of luxury
+                to every bite.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- BEST SELLERS -->
+
+<section class="best-sellers">
+
+    <h1>Our Best Sellers</h1>
+
+    <div class="product-container reveal">
+
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card reveal">
+
+            <img src="{{ url_for('static', filename='images/fig-tart.png') }}"
+                alt="Fig Tart">
+
+            <h2>Fig Tart</h2>
+
+            <p>
+                A buttery golden tart filled with silky cream 
+                and topped with fresh figs, finished with a delicate 
+                drizzle for the perfect balance of sweetness and elegance.
+
+            </p>
+
+            <a href="/product">Shop Now</a>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card reveal">
+
+            <img src="{{ url_for('static', filename='images/chocolate-cake.png') }}"
+                alt="Rasberry Merlot">
+
+            <h2>Rasberry Merlot</h2>
+
+            <p>
+                A smooth raspberry merlot mousse layered on 
+                a rich chocolate base, finished with glossy ganache 
+                and topped with fresh raspberries.
+
+            </p>
+
+            <a href="/product">Shop Now</a>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card reveal">
+
+            <img src="{{ url_for('static', filename='images/profiterole.png') }}"
+                alt="profiterole">
+
+            <h2>Mango Yuzu Profiterole</h2>
+
+            <p>
+                A flaky profiterole filled with smooth mango 
+                yuzu cream, topped with light whipped cream and fresh mango pieces.
+
+            </p>
+
+            <a href="/product">Shop Now</a>
+
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="product-card reveal">
+
+            <img src="{{ url_for('static', filename='images/berry-tart.png') }}"
+                alt="Berry Tart">
+
+            <h2>Berry Tart</h2>
+
+            <p>
+                A delicate tart bursting with cream,
+                berries, and soft sweetness.
+            </p>
+
+            <a href="/product">Shop Now</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="shop-all-container reveal">
+
+        <a href="/products" class="shop-all-btn">
+            Shop All →
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+
+    <div class="about-text reveal">
+
+        <h1>About Us</h1>
+
+        <p>
+            At Blush Delight, we transform everyday pastries into elegant 
+            creations inspired by delicate French patisserie. 
+            Founded from a passion for refined desserts and meaningful flavours, 
+            we work closely with locally sourced and organic farm ingredients to 
+            create pastries that feel both fresh and luxurious. From delicate tarts 
+            to handcrafted cakes, each creation blends classic French techniques 
+            with modern flavour pairings — turning simple desserts into 
+            unforgettable experiences.
+
+        </p>
+
+    </div>
+
+    <div class="about-images reveal">
+
+        <img src="{{ url_for('static', filename='images/bakery-hands.jpg') }}"
+            alt="Bakery preparation">
+
+        <img src="{{ url_for('static', filename='images/bakery-shop.jpg') }}"
+            alt="Bakery shop front">
+
+    </div>
+
+</section>
+
+</body>
+
+</html>
