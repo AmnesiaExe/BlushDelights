@@ -647,3 +647,48 @@ body {
         font-size: 34px;
     }
 }
+
+.order-body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #4b1f1a;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.order-section {
+    max-width: 900px;
+    margin: 45px auto;
+    padding: 0 25px 80px;
+    text-align: center;
+}
+
+.order-section h1 {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.order-subtitle {
+    font-size: 18px;
+    margin-bottom: 60px;
+    color: #5f302b;
+}
+
+.order-form {
+    text-align: left;
+}
+
+.form-group select {
+    border: 1px solid #d8c7c3;
+    padding: 14px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    border-radius: 2px;
+    background-color: white;
+    color: #3b1a16;
+}
+
+.form-group select:focus {
+    border-color: #5b221b;
+}

@@ -17,10 +17,15 @@ def products():
 def product_detail():
     return render_template("product_detail.html")
 
-#Contact Page
+# Contact Page
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+# Order page
+@app.route('/order')
+def order():
+    return render_template('order.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

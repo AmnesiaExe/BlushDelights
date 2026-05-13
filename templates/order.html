@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order - Blush Delight</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="order-body">
+
+    <nav class="contact-nav">
+        <a href="/">Home</a>
+        <a href="/products">Menu</a>
+        <a href="/contact">Contact</a>
+        <a href="/order">Order</a>
+        <a href="/about">About Us</a>
+    </nav>
+
+    <section class="order-section">
+        <h1>Custom Cake Order</h1>
+        <p class="order-subtitle">
+            Design a cake for birthdays, weddings, celebrations, or any sweet moment worth remembering.
+        </p>
+
+        <form class="order-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name">
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="text" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label>Occasion</label>
+                    <select name="occasion">
+                        <option>Birthday</option>
+                        <option>Wedding</option>
+                        <option>Anniversary</option>
+                        <option>Graduation</option>
+                        <option>Baby Shower</option>
+                        <option>Corporate Event</option>
+                        <option>Other Celebration</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Cake Size</label>
+                    <select name="size">
+                        <option>6 inch - serves 6 to 8</option>
+                        <option>8 inch - serves 10 to 14</option>
+                        <option>10 inch - serves 18 to 24</option>
+                        <option>Two-tier cake</option>
+                        <option>Custom size</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Cake Flavour</label>
+                    <select name="cake-flavour">
+                        <option>Vanilla Bean</option>
+                        <option>Chocolate Fudge</option>
+                        <option>Raspberry Merlot</option>
+                        <option>Matcha Strawberry</option>
+                        <option>Black Sesame</option>
+                        <option>Yuzu Lemon</option>
+                        <option>Red Velvet</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Cream Flavour</label>
+                    <select name="cream-flavour">
+                        <option>Vanilla Chantilly Cream</option>
+                        <option>White Chocolate Cream</option>
+                        <option>Strawberry Cream</option>
+                        <option>Chocolate Ganache</option>
+                        <option>Matcha Cream</option>
+                        <option>Salted Caramel Cream</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Filling</label>
+                    <select name="filling">
+                        <option>Fresh Strawberries</option>
+                        <option>Raspberry Compote</option>
+                        <option>Mango Yuzu Curd</option>
+                        <option>Chocolate Mousse</option>
+                        <option>Salted Caramel</option>
+                        <option>Mixed Berries</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Pickup Date</label>
+                    <input type="date" name="pickup-date">
+                </div>
+
+                <div class="form-group">
+                    <label>Pickup Time</label>
+                    <input type="time" name="pickup-time">
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label>Message on Cake</label>
+                <input type="text" name="cake-message" placeholder="Happy Birthday, Congratulations, etc.">
+            </div>
+
+            <div class="form-group full-width">
+                <label>Design Notes</label>
+                <textarea name="design-notes" rows="6" placeholder="Tell us your colour theme, decorations, inspiration, allergies, or special requests."></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">Submit Order Request</button>
+        </form>
+
+        <div class="contact-dropdowns">
+            <details>
+                <summary>Order Notice</summary>
+                <p>Custom cake orders should be placed at least 5–7 days in advance.</p>
+                <p>Large celebration cakes and tiered cakes may require 2 weeks’ notice.</p>
+            </details>
+
+            <details>
+                <summary>Allergy Information</summary>
+                <p>Our kitchen handles dairy, gluten, eggs, nuts, soy, and other allergens.</p>
+                <p>Please mention any allergies or dietary requirements in your design notes.</p>
+            </details>
+
+            <details>
+                <summary>Pickup & Delivery</summary>
+                <p>Pickup is available from our Perth store.</p>
+                <p>Delivery may be available for selected custom cakes and event orders.</p>
+            </details>
+
+            <details>
+                <summary>Payment</summary>
+                <p>After receiving your request, our team will confirm availability, final pricing, and payment details.</p>
+            </details>
+        </div>
+    </section>
+
+</body>
+</html>
