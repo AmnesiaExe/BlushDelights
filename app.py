@@ -17,6 +17,10 @@ def products():
 def product_detail():
     return render_template("product_detail.html")
 
+#Contact Page
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
