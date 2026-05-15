@@ -1,0 +1,806 @@
+/* RESET */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+body {
+    font-family: Georgia, serif;
+    background-color: #641f19;
+    color: #f4d7d5;
+}
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    padding-top: 20px;
+
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar a {
+    text-decoration: none;
+
+    color: #f4d7d5;
+
+    border: 1px solid #f4d7d5;
+
+    padding: 12px 34px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #f4d7d5;
+    color: #641f19;
+}
+
+
+/* HERO SECTION */
+.hero {
+
+    height: 100vh;
+
+    padding-top: 120px;
+
+    background-image: url("../images/cake.jpg");
+
+    background-size: contain;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.hero-content h1 {
+
+    font-size: 100px;
+
+    font-weight: normal;
+
+    margin-bottom: 500px;
+}
+
+.subtitle {
+
+    margin-bottom: 20px;
+
+    font-size: 18px;
+}
+
+.tagline {
+
+    font-size: 20px;
+}
+
+/* INDULGENCE SECTION */
+
+.indulgence {
+
+    background-color: #e5c1c1;
+
+    color: #5a1e19;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 150px;
+
+    padding: 100px 80px;
+
+    flex-wrap: wrap;
+}
+
+
+.indulgence-image img {
+
+    width: 400px;
+
+    border-radius: 25px;
+}
+
+
+.indulgence-text {
+
+    max-width: 450px;
+}
+
+
+.indulgence-text h2 {
+
+    font-size: 48px;
+
+    font-weight: normal;
+}
+
+
+.indulgence-text h1 {
+
+    font-size: 60px;
+
+    margin-bottom: 20px;
+
+    font-style: italic;
+}
+
+
+.indulgence-text p {
+
+    line-height: 1.8;
+
+    font-size: 17px;
+}
+
+/* BEST SELLERS */
+
+.best-sellers {
+
+    background-color: #641f19;
+
+    padding: 100px 80px;
+
+    color: #f4d7d5;
+}
+
+
+.best-sellers h1 {
+
+    font-size: 60px;
+
+    margin-bottom: 60px;
+
+    font-weight: normal;
+}
+
+
+.product-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 60px;
+
+    flex-wrap: wrap;
+}
+
+
+.product-card {
+    width: 280px;
+    min-height: 520px;
+
+    border: 2px solid #f4d7d5;
+    border-radius: 25px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: contain;
+
+    background-color: #e5c1c1;
+
+    border-radius: 20px;
+
+    padding: 15px;
+
+    margin-bottom: 30px;
+}
+
+.product-card h2 {
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.product-card a {
+    color: #f4d7d5;
+    text-decoration: none;
+    font-weight: bold;
+
+    margin-top: auto;
+}
+
+.shop-all-container {
+
+    margin-top: 60px;
+
+    text-align: right;
+}
+
+
+.shop-all-btn {
+
+    text-decoration: none;
+
+    color: #f4d7d5;
+
+    border: 1px solid #f4d7d5;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+
+.shop-all-btn:hover {
+
+    background-color: #f4d7d5;
+
+    color: #641f19;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+    background-color: #641f19;
+    padding: 90px 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    flex-wrap: wrap;
+}
+
+.about-text {
+    width: 1000px;
+    min-height: 430px;
+
+    background-color: #e5c1c1;
+    color: #641f19;
+
+    border-radius: 35px;
+
+    padding: 60px 45px;
+
+    text-align: center;
+}
+
+.about-text h1 {
+    font-size: 70px;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+.about-text p {
+    font-size: 25px;
+    line-height: 1.7;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-images img {
+    width: 390px;
+    height: 210px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+
+
+/* SCROLL FADE ANIMATION */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeDown 1s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* PRODUCT DETAIL PAGE */
+
+.product-nav {
+    position: static;
+    background-color: #641f19;
+    padding: 25px;
+}
+
+.product-detail-page {
+    min-height: 100vh;
+    background-color: #e5c1c1;
+    color: #641f19;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 70px;
+}
+
+.product-detail-card {
+    width: 100%;
+    max-width: 1450px;
+
+    border: 4px solid #641f19;
+    border-radius: 35px;
+
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.detail-image-box {
+    width: 470px;
+    height: 620px;
+
+    background-color: #641f19;
+    border-radius: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-image-box img {
+    width: 380px;
+    object-fit: contain;
+}
+
+.detail-info {
+    flex: 1;
+    text-align: center;
+}
+
+.detail-info h1 {
+    font-size: 64px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.detail-short {
+    font-size: 23px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.detail-list {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.quantity-box {
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 20px;
+}
+
+.quantity-box input {
+    width: 80px;
+    padding: 10px;
+
+    border: 2px solid #641f19;
+    border-radius: 15px;
+
+    font-size: 18px;
+    text-align: center;
+}
+
+.cart-btn {
+    background-color: #641f19;
+    color: #f4d7d5;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 15px 35px;
+
+    font-size: 18px;
+    font-family: Georgia, serif;
+
+    cursor: pointer;
+}
+
+/* PRODUCT ACCORDION */
+
+.product-accordion {
+    margin-top: 35px;
+    text-align: left;
+}
+
+.product-accordion details {
+    border-bottom: 1px solid rgba(100, 31, 25, 0.25);
+    padding: 18px 0;
+}
+
+.product-accordion summary {
+    list-style: none;
+    cursor: pointer;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-accordion summary::after {
+    content: "+";
+    font-size: 28px;
+}
+
+.product-accordion details[open] summary::after {
+    content: "−";
+}
+
+.product-accordion p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #4b1f1a;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.contact-nav {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 28px 20px;
+    background-color: #ffffff;
+}
+
+.contact-nav a {
+    text-decoration: none;
+    color: #4b1f1a;
+    border: 1px solid #b98b84;
+    padding: 10px 34px;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.contact-nav a:hover {
+    background-color: #5b221b;
+    color: white;
+}
+
+.contact-section {
+    max-width: 850px;
+    margin: 45px auto;
+    padding: 0 25px 80px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    margin-bottom: 60px;
+    color: #5f302b;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.form-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #3b1a16;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #d8c7c3;
+    padding: 14px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    border-radius: 2px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #5b221b;
+}
+
+.full-width {
+    margin-bottom: 24px;
+}
+
+.send-btn {
+    background-color: #5b221b;
+    color: white;
+    border: none;
+    padding: 13px 34px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: #7a3027;
+}
+
+.contact-dropdowns {
+    margin-top: 90px;
+    text-align: left;
+}
+
+.contact-dropdowns details {
+    border-top: 1px solid #d8c7c3;
+    padding: 22px 0;
+}
+
+.contact-dropdowns details:last-child {
+    border-bottom: 1px solid #d8c7c3;
+}
+
+.contact-dropdowns summary {
+    cursor: pointer;
+    font-size: 20px;
+    color: #4b1f1a;
+}
+
+.contact-dropdowns p {
+    font-family: Arial, sans-serif;
+    color: #5c4a46;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .contact-nav a {
+        padding: 9px 22px;
+    }
+
+    .contact-section h1 {
+        font-size: 34px;
+    }
+}
+
+.order-body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #4b1f1a;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.order-section {
+    max-width: 900px;
+    margin: 45px auto;
+    padding: 0 25px 80px;
+    text-align: center;
+}
+
+.order-section h1 {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.order-subtitle {
+    font-size: 18px;
+    margin-bottom: 60px;
+    color: #5f302b;
+}
+
+.order-form {
+    text-align: left;
+}
+
+.form-group select {
+    border: 1px solid #d8c7c3;
+    padding: 14px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    border-radius: 2px;
+    background-color: white;
+    color: #3b1a16;
+}
+
+.form-group select:focus {
+    border-color: #5b221b;
+}
+
+
+
+/*TWISHA'S CODE*/
+
+/*MENU*/
+.dessert-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 60px;
+
+    flex-wrap: wrap;
+}
+
+
+.dessert-card {
+    width: 350px;
+    min-height: 520px;
+
+    border: 2px solid #e5c1c1;
+    border-radius: 25px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s;
+}
+
+.dessert-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: contain;
+
+    background-color: #e5c1c1;
+
+    border-radius: 20px;
+
+    padding: 15px;
+
+    margin-bottom: 30px;
+}
+
+.dessert-card h2 {
+    margin-bottom: 15px;
+}
+
+.dessert-card p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.dessert-card a {
+    color: #e5c1c1;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.dessert-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.dessert {
+    padding-top: 100px; /* pushes content below the navbar */
+    padding: 100px 80px 80px;
+}
+
+
+
+/* TART CODE */
+.tartimg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;    
+}
+
+/* CAKE CODE */
+.cakeimg {
+    width: 400px;     
+}
+
+/*LOGO*/
+.logo {
+    width: 400px;  
+    height: auto;  
+    position: fixed;  
+    top: 0px;  
+    left: 0px;  
+}
+
+.logoform {
+    width: 400px;  
+    height: auto;  
+    position: center;  
+}
+
+.cakes-page {
+    color: #e5c1c1;
+    font-family: Georgia, serif;
+}
