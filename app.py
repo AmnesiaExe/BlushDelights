@@ -28,6 +28,26 @@ def cakes():
 def tarts():
     return render_template("menu/tarts.html")
 
+# Macarons Page
+@app.route("/macarons")
+def macarons():
+    return render_template("menu/macarons.html")
+
+# Profiteroles Page
+@app.route("/profiteroles")
+def profiteroles():
+    return render_template("menu/profiteroles.html")
+
+# BigCakes Page
+@app.route("/bigcakes")
+def bigcakes():
+    return render_template("menu/bigcakes.html")
+
+# Specials Page
+@app.route("/specials")
+def specials():
+    return render_template("menu/specials.html")
+
 # Contact Page
 @app.route('/contact')
 def contact():

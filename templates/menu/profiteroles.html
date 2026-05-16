@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Profiterole</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <h1 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; color: #f2d6d0; letter-spacing: 2px; font-size: 80px;">Blush Delights</h1>
+    
+</head>
+    
+<body class ="profiterole-page">
+    
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/products">Menu</a>
+        <a href="/contact">Contact</a>
+        <a href="/order#">Order</a>
+        <a href="/#about-us">About Us</a>
+
+    </nav>
+   
+    <div class = "page-header">
+        <h1>Profiteroles Collection</h1>
+        <h2>Handcrafted with love. Every bite, a little occasion.</h2>
+        <h3>A little indulgence, beautifully wrapped and ready to go.</h3>
+    </div>
+    
+
+    
+
+    <div class = "dessert">
+        <div class="dessert-container">
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Profiteroles/blueberry.png') }}" alt="blueberry">
+                <h2>Blueberry Profiterole</h2>
+                <p>This is a Blueberry Profiterole.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Profiteroles/choc.png') }}" alt="chocolate">
+                <h2>Chocolate Profiterole</h2>
+                <p>This is a Chocolate Profiterole.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Profiteroles/caramel.png') }}" alt="caramel">
+                <h2>Caramel Profiterole</h2>
+                <p>This is a Caramel Profiterole.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Profiteroles/mandarin.png') }}" alt="mandarin">
+                <h2>Mandarin Profiterole</h2>
+                <p>This is a mandarin Profiterole.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Profiteroles/mango.png') }}" alt="mango">
+                <h2>Mango Profiterole</h2>
+                <p>This is a mango Profiterole.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Profiteroles/pistachio.png') }}" alt="pistachio">
+                <h2>Pistachio Profiterole</h2>
+                <p>This is a Pistachio Profiterole.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Profiteroles/raspberry.png') }}" alt="raspberry">
+                <h2>Raspberry Profiterole</h2>
+                <p>This is a Raspberry Profiterole.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Profiteroles/strawberry.png') }}" alt="strawberry">
+                <h2>Strawberry Profiterole</h2>
+                <p>This is a strawberry Profiterole.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+        </div>
+    </div>
+    <p>Terms and conditions apply.</p>
+</body>
+</html>

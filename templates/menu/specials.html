@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Specials</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <h1 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; color: #f2d6d0; letter-spacing: 2px; font-size: 80px;">Blush Delights</h1>
+    
+</head>
+    
+<body class ="specials-page">
+    
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/products">Menu</a>
+        <a href="/contact">Contact</a>
+        <a href="/order#">Order</a>
+        <a href="/#about-us">About Us</a>
+
+    </nav>
+   
+    <div class = "page-header">
+        <h1>Specials</h1>
+        <h2>Handcrafted with love. Every bite, a little occasion.</h2>
+        <h3>Mother's Day Deals</h3>
+        <p>Buy any pink dessert and get a free strawberry macaron as the perfect gift for Mum.</p>
+    </div>
+    
+
+    
+
+    <div class = "dessert">
+        <div class="dessert-container">
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/CakeSlices/strawberry.png') }}" alt="strawberry">
+                <h2>Strawberry Slice</h2>
+                <p>Pillowy vanilla sponge crowned with luscious whipped cream and plump, sun-kissed strawberries. Light, fresh, and effortlessly elegant.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+        <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Tarts/raspberrytart.png') }}" alt="raspberry">
+                <h2>Raspberry Tart</h2>
+                <p>This is a Raspberry tart.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Tarts/strawberrytart.png') }}" alt="strawberry">
+                <h2>Strawberry Tart</h2>
+                <p>This is a strawberry tart.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Profiteroles/raspberry.png') }}" alt="raspberry">
+                <h2>Raspberry Profiterole</h2>
+                <p>This is a Raspberry Profiterole.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Profiteroles/strawberry.png') }}" alt="strawberry">
+                <h2>Strawberry Profiterole</h2>
+                <p>This is a strawberry Profiterole.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/BigCakes/raspberry.png') }}" alt="raspberry">
+                <h2>Raspberry Cake</h2>
+                <p>This is a Raspberry cake.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/BigCakes/strawberry.png') }}" alt="strawberry">
+                <h2>Strawberry Cake</h2>
+                <p>Pillowy vanilla sponge crowned with luscious whipped cream and plump, sun-kissed strawberries. Light, fresh, and effortlessly elegant.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Macarons/raspberry.png') }}" alt="raspberry">
+                <h2>Raspberry Macaron</h2>
+                <p>This is a Raspberry Macaron.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+            <div class = "dessert-card">
+                <img src="{{ url_for('static', filename='images/Macarons/strawberry.png') }}" alt="strawberry">
+                <h2>Strawberry Macaron</h2>
+                <p>This is a strawberry Macaron.</p>
+                <a href="/product">Shop Now</a>
+            </div>
+
+        </div>
+    </div>
+    <p>Terms and conditions apply.</p>
+</body>
+</html>
